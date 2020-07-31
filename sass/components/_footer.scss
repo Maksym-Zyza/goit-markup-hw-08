@@ -1,0 +1,107 @@
+/* footer */
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.baseline {
+  align-items: baseline;
+}
+
+.address-map-item {
+  margin-top: 20px;
+}
+
+.address-item {
+  margin-top: 9px;
+}
+
+.address-map {
+  display: block;
+  color: $light-text-color;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-mail,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.social-pages-container {
+  margin-left: 69px;
+}
+
+.footer-accede {
+  margin-bottom: 20px;
+  color: $light-text-color;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.footer-accede-social .social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-item-element {
+  display: flex;
+  fill: #ffffff;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.footer-subscribe {
+  margin-bottom: 20px;
+  color: $light-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscribe-container {
+  margin-left: 94px;
+}
+
+/* Footer button */
+.footer-button {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  padding-left: 29px;
+  padding-right: 28px;
+}
+
+.button-icon {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* Footer form */
+.footer-form {
+  width: 358px;
+  height: 50px;
+  padding-left: 11px;
+
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
