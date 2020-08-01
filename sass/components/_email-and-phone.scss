@@ -1,11 +1,23 @@
 /* email-and-phone */
 .page-header-adres {
-  display: inline-flex;
+  display: none;
   align-items: center;
   margin-left: auto;
 
   & .adres-item + .adres-item {
     margin-left: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
   }
 }
 

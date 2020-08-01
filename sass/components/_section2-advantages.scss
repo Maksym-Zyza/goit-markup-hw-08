@@ -1,6 +1,29 @@
 /* section2-advantages */
+
+.benefits {
+  display: block;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .benefits .benefits-item + .benefits-item {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.benefits .benefits-item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .benefits-background {
@@ -22,6 +45,11 @@
   font-size: 14px;
   line-height: 1.17;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .benefits-text {

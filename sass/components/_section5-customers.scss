@@ -1,13 +1,47 @@
 /* section5-customers */
+
+.customers {
+  display: flex;
+  // flex-wrap: wrap;
+
+  // @media screen and (min-width: 480px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.customers .item {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 30px;
+  // }
+}
+
 .customers .item + .item {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .customers-background {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -21,4 +55,10 @@
     border-color: $accent-color;
     fill: $accent-color;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
+
+// (100% - количество марджинов в строке * значение марджина) / количество елементов в строке

@@ -1,6 +1,15 @@
 /* section3-offer */
-.offer .item + .item {
-  margin-left: 30px;
+
+.offer {
+  display: none;
+
+  & .item + .item {
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .offer-link {
