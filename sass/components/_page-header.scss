@@ -22,31 +22,3 @@
 .nav-box {
   border-bottom: 1px solid #ececec;
 }
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-.section-title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.18;
-  text-align: center;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.17;
-  }
-}
-
-.no-padding-bottom {
-  padding-bottom: 0;
-}
