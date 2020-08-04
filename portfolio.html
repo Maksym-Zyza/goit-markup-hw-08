@@ -63,11 +63,11 @@
     <main>
       <!-- Section - Portfolio -->
       <section class="section">
-        <div class="container">
+        <div class="container mobil-padding">
           <h1 hidden>Портфолио Веб студии</h1>
 
           <!-- Portfolio Selection -->
-          <ul class="portfolio-selection list flex">
+          <ul class="portfolio-selection list">
             <li class="item">
               <button type="button" class="selection-button primary">
                 Все
@@ -96,7 +96,7 @@
           </ul>
 
           <!-- Portfolio Works -->
-          <ul class="portfolio-works list flex-container">
+          <ul class="portfolio-works list">
             <li class="flex-element">
               <a href="" class="portfolio-works-link">
                 <div class="overlay-active">
@@ -300,46 +300,34 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="container flex baseline">
+      <div class="container baseline">
         <div class="address-container">
-          <a class="address-logo-link flex" href="./">
-            <svg class="address-logo" width="153" height="31">
+          <a class="address-logo-link" href="./">
+            <svg class="logo-item">
               <use href="./img/sprite.svg#icon-Web_Studio_white"></use>
             </svg>
           </a>
           <address>
             <ul class="address list">
               <li class="address-map-item">
-                <a
-                  class="address-map"
-                  href="https://goo.gl/maps/XdUtzJVZAnosNTWN9"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                <a class="address-map" href="https://goo.gl/maps/XdUtzJVZAnosNTWN9" target="_blank">г. Киев, пр-т Леси
+                  Украинки, 26</a>
               </li>
               <li class="address-item">
-                <a class="address-mail" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+                <a class="address-mail" href="mailto:info@example.com">info@example.com</a>
               </li>
               <li class="address-item">
-                <a class="address-tel" href="tel:+380961111111"
-                  >+38 099 111 11 11</a
-                >
+                <a class="address-tel" href="tel:+380961111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-
+    
         <div class="social-pages-container">
           <h3 class="footer-accede">присоединяйтесь</h3>
-          <ul class="footer-accede-social list flex">
+          <ul class="footer-accede-social list">
             <li class="social-item">
-              <a
-                class="social-item-element"
-                aria-label="instagram link"
-                href=""
-              >
+              <a class="social-item-element" aria-label="instagram link" href="">
                 <svg width="44" height="44">
                   <use href="./img/sprite.svg#icon-Ellipse_instagram"></use>
                 </svg>
@@ -368,11 +356,11 @@
             </li>
           </ul>
         </div>
-
+    
         <div class="subscribe-container">
           <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
-          <form>
-            <input name="q" placeholder="E-mail" class="footer-form" />
+          <form class="footer-form">
+            <input class="footer-form-input" name="mail" placeholder="E-mail" />
             <button class="button footer-button">
               Подписаться
               <svg class="button-icon" width="24" height="24">
@@ -381,7 +369,6 @@
             </button>
           </form>
         </div>
-      </div>
     </footer>
   </body>
 </html>
