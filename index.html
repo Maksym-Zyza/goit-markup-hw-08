@@ -16,38 +16,35 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container nav-box flex">
-        <nav class="flex">
-          <a class="logo" href="./">
-            <svg class="logo-item">
-              <use href="./img/sprite.svg#icon-web-studio"></use>
-            </svg>
-          </a>
-          <button
-            type="button"
-            class="menu-button is-open"
-            aria-expanded="false"
-            data-menu-button
+      <div class="container nav-box">
+        <a class="logo" href="./">
+          <svg class="logo-item">
+            <use href="./img/sprite.svg#icon-web-studio"></use>
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="nav-button-icon"
+            width="24"
+            height="16"
+            aria-label="Переключатель мобильного меню"
           >
-            <svg
-              class="nav-button-icon"
-              width="24"
-              height="16"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="icon-menu"
-                href="./img/sprite2.svg#icon-menu_open"
-              ></use>
-              <use
-                class="icon-cross"
-                href="./img/sprite2.svg#icon-menu_close"
-              ></use>
-            </svg>
-          </button>
-          <div class="menu-container" data-menu>
-            Меню контейнер
-          </div>
+            <use
+              class="icon-menu"
+              href="./img/sprite2.svg#icon-menu_close"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./img/sprite2.svg#icon-menu_open"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
           <ul class="site-nav list">
             <li class="item-nav">
               <a class="site-nav-link current" href="./">Студия</a>
@@ -59,26 +56,26 @@
               <a class="site-nav-link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="page-header-adres list">
-          <li class="adres-item">
-            <a class="adres-item-link" href="mailto:info@devstudio.com">
-              <svg class="adres-item-envelope">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="adres-item">
-            <a class="adres-item-link" href="tel:+380961111111">
-              <svg class="adres-item-telephone">
-                <use href="./img/sprite.svg#icon-Tel"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="page-header-adres list">
+            <li class="adres-item">
+              <a class="adres-item-link" href="mailto:info@devstudio.com">
+                <svg class="adres-item-envelope">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="adres-item">
+              <a class="adres-item-link" href="tel:+380961111111">
+                <svg class="adres-item-telephone">
+                  <use href="./img/sprite.svg#icon-Tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -158,7 +155,7 @@
       <section class="section offer">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="offer list flex">
+          <ul class="offer list">
             <li class="item">
               <a class="offer-link" href="">
                 <img
@@ -203,9 +200,9 @@
                 />
                 <h3 class="team-member">Николай Кучеренко</h3>
                 <p class="team-member-position">Product Designer</p>
-                <ul class="team-member-social-pages list flex">
+                <ul class="team-member-social-pages list">
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_instagram_gray"
@@ -214,7 +211,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_twitter_gray"
@@ -223,7 +220,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_facebook_gray"
@@ -232,7 +229,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_linkindin_gray"
@@ -248,9 +245,9 @@
                 <img src="./img/Ольга_Иванова.jpg" alt="фото - Ольга Иванова" />
                 <h3 class="team-member">Ольга Иванова</h3>
                 <p class="team-member-position">Frontend Developer</p>
-                <ul class="team-member-social-pages list flex">
+                <ul class="team-member-social-pages list">
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_instagram_gray"
@@ -259,7 +256,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_twitter_gray"
@@ -268,7 +265,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_facebook_gray"
@@ -277,7 +274,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_linkindin_gray"
@@ -296,9 +293,9 @@
                 />
                 <h3 class="team-member">Андрей Шевченко</h3>
                 <p class="team-member-position">Marketing</p>
-                <ul class="team-member-social-pages list flex">
+                <ul class="team-member-social-pages list">
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_instagram_gray"
@@ -307,7 +304,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_twitter_gray"
@@ -316,7 +313,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_facebook_gray"
@@ -325,7 +322,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_linkindin_gray"
@@ -341,9 +338,9 @@
                 <img src="./img/Иван_Николаев.jpg" alt="фото - Иван Николаев" />
                 <h3 class="team-member">Иван Николаев</h3>
                 <p class="team-member-position">UI Designer</p>
-                <ul class="team-member-social-pages list flex">
+                <ul class="team-member-social-pages list">
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_instagram_gray"
@@ -352,7 +349,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_twitter_gray"
@@ -361,7 +358,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_facebook_gray"
@@ -370,7 +367,7 @@
                     </a>
                   </li>
                   <li class="item">
-                    <a class="member-social-link flex" href="">
+                    <a class="member-social-link" href="">
                       <svg class="member-social-element" width="44" height="44">
                         <use
                           href="./img/sprite.svg#icon-Ellipse_linkindin_gray"
@@ -389,7 +386,7 @@
       <section class="section">
         <div class="container no-padding">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="customers list flex">
+          <ul class="customers list">
             <li class="item">
               <a class="customers-background" href="">
                 <svg class="customers-item-element" width="44" height="49">
@@ -528,64 +525,71 @@
             </button>
           </form>
         </div>
+      </div>
     </footer>
 
-      <!-- Модальное окно -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal-form" autocomplete="off">
-          <b class="form-appeal">Оставьте свои данные, мы вам перезвоним</b>
-          <ul class="form-list">
-            <li class="form-item">
-              <label class="form-field">
-                <input type="text" name="name" placeholder=" " autofocus />
-                <span class="form-label">Имя</span>
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./img/sprite2.svg#icon-person_black"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="form-item">
-              <label class="form-field">
-                <input type="tel" name="tel" placeholder=" " />
-                <span class="form-label">Телефон</span>
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./img/sprite2.svg#icon-phone_black"></use>
-                </svg>
-              </label>
-            </li>
-            <li class="form-item">
-              <label class="form-field">
-                <input type="email" name="mail" placeholder=" " />
-                <span class="form-label">Почта</span>
-                <svg class="form-icon" width="18" height="18">
-                  <use href="./img/sprite2.svg#icon-email_black"></use>
-                </svg>
-              </label>
-            </li>
-          </ul>
-          <p class="form-item-comment">
-            <textarea class="comment" name="comment" id="comment" rows="8" placeholder=" "></textarea>
-            <label class="textarea-label" for="comment">Комментарий</label>
-          </p>
-          <p>
-            <label class="field">
-              <input class="checkbox" type="checkbox" name="policy" />
-              <span class="icon"></span>
-              <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
-                <a class="checkbox-link" href="./">Условия договора</a>
-              </span>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-form">
+        <b class="form-appeal">Оставьте свои данные, мы вам перезвоним</b>
+        <ul class="form-list">
+          <li class="form-item">
+            <label class="form-field">
+              <input type="text" name="name" placeholder=" " autofocus />
+              <span class="form-label">Имя</span>
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/sprite2.svg#icon-person_black"></use>
+              </svg>
             </label>
-          </p>
-          <button class="button-send">Отправить</button>
-          <a class="modal-close" data-modal-close>
-            <svg width="11" height="11">
-              <use href="./img/sprite2.svg#icon-close_black_11"></use>
-            </svg>
-          </a>
-        </div>
+          </li>
+          <li class="form-item">
+            <label class="form-field">
+              <input type="tel" name="tel" placeholder=" " />
+              <span class="form-label">Телефон</span>
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/sprite2.svg#icon-phone_black"></use>
+              </svg>
+            </label>
+          </li>
+          <li class="form-item">
+            <label class="form-field">
+              <input type="email" name="mail" placeholder=" " />
+              <span class="form-label">Почта</span>
+              <svg class="form-icon" width="18" height="18">
+                <use href="./img/sprite2.svg#icon-email_black"></use>
+              </svg>
+            </label>
+          </li>
+        </ul>
+        <p class="form-item-comment">
+          <textarea
+            class="comment"
+            name="comment"
+            id="comment"
+            rows="8"
+            placeholder=" "
+          ></textarea>
+          <label class="textarea-label" for="comment">Комментарий</label>
+        </p>
+        <p>
+          <label class="field">
+            <input class="checkbox" type="checkbox" name="policy" />
+            <span class="icon"></span>
+            <span class="checkbox-text"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" href="./">Условия договора</a>
+            </span>
+          </label>
+        </p>
+        <button class="button-send">Отправить</button>
+        <a class="modal-close" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./img/sprite2.svg#icon-close_black_11"></use>
+          </svg>
+        </a>
       </div>
-      </div>
-    
+    </div>
+
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

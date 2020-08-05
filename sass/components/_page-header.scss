@@ -21,5 +21,11 @@
 
 .nav-box {
   position: relative;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }

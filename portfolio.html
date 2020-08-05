@@ -17,13 +17,35 @@
 
   <body>
     <header class="page-header">
-      <div class="container nav-box flex">
-        <nav class="flex">
-          <a class="logo" href="./">
-            <svg class="logo-item">
-              <use href="./img/sprite.svg#icon-web-studio"></use>
-            </svg>
-          </a>
+      <div class="container nav-box">
+        <a class="logo" href="./">
+          <svg class="logo-item">
+            <use href="./img/sprite.svg#icon-web-studio"></use>
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            class="nav-button-icon"
+            width="24"
+            height="16"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./img/sprite2.svg#icon-menu_close"
+            ></use>
+            <use
+              class="icon-cross"
+              href="./img/sprite2.svg#icon-menu_open"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
           <ul class="site-nav list">
             <li class="item-nav">
               <a class="site-nav-link" href="./">Студия</a>
@@ -37,26 +59,26 @@
               <a class="site-nav-link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="page-header-adres list">
-          <li class="adres-item">
-            <a class="adres-item-link" href="mailto:info@devstudio.com">
-              <svg class="adres-item-envelope">
-                <use href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="adres-item">
-            <a class="adres-item-link" href="tel:+380961111111">
-              <svg class="adres-item-telephone">
-                <use href="./img/sprite.svg#icon-Tel"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="page-header-adres list">
+            <li class="adres-item">
+              <a class="adres-item-link" href="mailto:info@devstudio.com">
+                <svg class="adres-item-envelope">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="adres-item">
+              <a class="adres-item-link" href="tel:+380961111111">
+                <svg class="adres-item-telephone">
+                  <use href="./img/sprite.svg#icon-Tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -310,24 +332,36 @@
           <address>
             <ul class="address list">
               <li class="address-map-item">
-                <a class="address-map" href="https://goo.gl/maps/XdUtzJVZAnosNTWN9" target="_blank">г. Киев, пр-т Леси
-                  Украинки, 26</a>
+                <a
+                  class="address-map"
+                  href="https://goo.gl/maps/XdUtzJVZAnosNTWN9"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
               <li class="address-item">
-                <a class="address-mail" href="mailto:info@example.com">info@example.com</a>
+                <a class="address-mail" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
               <li class="address-item">
-                <a class="address-tel" href="tel:+380961111111">+38 099 111 11 11</a>
+                <a class="address-tel" href="tel:+380961111111"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-    
+
         <div class="social-pages-container">
           <h3 class="footer-accede">присоединяйтесь</h3>
           <ul class="footer-accede-social list">
             <li class="social-item">
-              <a class="social-item-element" aria-label="instagram link" href="">
+              <a
+                class="social-item-element"
+                aria-label="instagram link"
+                href=""
+              >
                 <svg width="44" height="44">
                   <use href="./img/sprite.svg#icon-Ellipse_instagram"></use>
                 </svg>
@@ -356,7 +390,7 @@
             </li>
           </ul>
         </div>
-    
+
         <div class="subscribe-container">
           <h3 class="footer-subscribe">Подпишитесь на рассылку</h3>
           <form class="footer-form">
@@ -369,6 +403,9 @@
             </button>
           </form>
         </div>
+      </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
