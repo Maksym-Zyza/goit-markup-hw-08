@@ -30,8 +30,8 @@
 }
 
 .benefits-background {
-  display: block;
-  width: 270px;
+  display: flex;
+  justify-content: center;
   border-radius: 4px;
   background-color: #f5f4fa;
 }

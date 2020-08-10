@@ -159,7 +159,11 @@
             <li class="item">
               <a class="offer-link" href="">
                 <img
-                  src="./img/box_1.jpg"
+                  srcset="
+                    ./img/offer_img1_1x.jpg 1x,
+                    ./img/offer_img1_2x.jpg 2x
+                  "
+                  src="./img/offer_img1_1x.jpg"
                   alt="Изображение - десктопные приложения"
                 />
                 <p class="offer-caption">Десктопные приложения</p>
@@ -168,7 +172,11 @@
             <li class="item">
               <a class="offer-link" href="">
                 <img
-                  src="./img/box_2.jpg"
+                  srcset="
+                    ./img/offer_img2_1x.jpg 1x,
+                    ./img/offer_img2_2x.jpg 2x
+                  "
+                  src="./img/offer_img2_1x.jpg"
                   alt="Изображение - мобильные приложения"
                 />
                 <p class="offer-caption">Мобильные приложения</p>
@@ -177,7 +185,11 @@
             <li class="item">
               <a class="offer-link" href="">
                 <img
-                  src="./img/box_3.jpg"
+                  srcset="
+                    ./img/offer_img3_1x.jpg 1x,
+                    ./img/offer_img3_2x.jpg 2x
+                  "
+                  src="./img/offer_img3_1x.jpg"
                   alt="Изображение - дизайнерские решения"
                 />
                 <p class="offer-caption">Дизайнерские решения</p>
@@ -194,10 +206,27 @@
           <ul class="team list">
             <li class="team-item">
               <div class="member-background">
-                <img
-                  src="./img/Николай_Кучеренко.jpg"
-                  alt="фото - Николай Кучеренко"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/Кучеренко_320.jpg 1x,
+                      ./img/Кучеренко_640.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/Кучеренко_dec_320.jpg 1x,
+                      ./img/Кучеренко_dec_640.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./img/Кучеренко_320.jpg"
+                    alt="фото - Николай Кучеренко"
+                    width="480"
+                  />
+                </picture>
+
                 <h3 class="team-member">Николай Кучеренко</h3>
                 <p class="team-member-position">Product Designer</p>
                 <ul class="team-member-social-pages list">
@@ -242,7 +271,23 @@
             </li>
             <li class="team-item">
               <div class="member-background">
-                <img src="./img/Ольга_Иванова.jpg" alt="фото - Ольга Иванова" />
+                <picture>
+                  <source
+                    srcset="./img/Иванова_320.jpg 1x, ./img/Иванова_640.jpg 2x"
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/Иванова_dec_320.jpg 1x,
+                      ./img/Иванова_dec_640.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./img/Иванова_320.jpg"
+                    alt="фото - Ольга Иванова"
+                    width="480"
+                  />
+                </picture>
                 <h3 class="team-member">Ольга Иванова</h3>
                 <p class="team-member-position">Frontend Developer</p>
                 <ul class="team-member-social-pages list">
@@ -287,10 +332,26 @@
             </li>
             <li class="team-item">
               <div class="member-background">
-                <img
-                  src="./img/Андрей_Шевченко.jpg"
-                  alt="фото - Андрей Шевченко"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/Шевченко_320.jpg 1x,
+                      ./img/Шевченко_640.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/Шевченко_dec_320.jpg 1x,
+                      ./img/Шевченко_dec_640.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./img/Шевченко_320.jpg"
+                    alt="фото - Андрей Шевченко"
+                    width="480"
+                  />
+                </picture>
                 <h3 class="team-member">Андрей Шевченко</h3>
                 <p class="team-member-position">Marketing</p>
                 <ul class="team-member-social-pages list">
@@ -335,7 +396,26 @@
             </li>
             <li class="team-item">
               <div class="member-background">
-                <img src="./img/Иван_Николаев.jpg" alt="фото - Иван Николаев" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/Николаев_320.jpg 1x,
+                      ./img/Николаев_640.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/Николаев_dec_320.jpg 1x,
+                      ./img/Николаев_dec_640.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./img/Николаев_320.jpg"
+                    alt="фото - Иван Николаев"
+                    width="480"
+                  />
+                </picture>
                 <h3 class="team-member">Иван Николаев</h3>
                 <p class="team-member-position">UI Designer</p>
                 <ul class="team-member-social-pages list">
