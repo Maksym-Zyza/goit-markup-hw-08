@@ -401,12 +401,15 @@ img {
 .hero {
   text-align: center;
   padding-bottom: 280px;
-  max-width: 480px;
+  max-width: 768px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(47, 48, 58, 0.8);
   background-image: url(../img/overlay.png), url(../img/Hero_mob_1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -417,7 +420,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    max-width: 1200px;
     background-image: url(../img/overlay.png), url(../img/Hero_tab_1x.jpg);
   }
 }
